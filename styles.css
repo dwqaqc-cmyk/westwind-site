@@ -44,14 +44,14 @@ footer strong{color:#008cff;font-size:20px}
 footer p{color:#cfd8e3;line-height:1.45}
 @media(max-width:1000px){
   .split,.contact,.intro-strip{grid-template-columns:1fr}
-  .image-grid{grid-template-columns:repeat(2,1fr)}
+  .image-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}.image-grid article{min-width:280px;scroll-snap-align:start}
   .industries div{grid-template-columns:1fr 1fr}
   .intro-strip a{width:max-content}
 }
 @media(max-width:640px){
   .intro-strip{padding:28px 20px}
   .intro-strip h1{font-size:24px}
-  .service-grid,.image-grid,footer{grid-template-columns:1fr}
+  .service-grid,footer{grid-template-columns:1fr}.image-grid{display:grid;grid-template-columns:1fr;overflow:visible}.image-grid article{min-width:0}
   .dark-panel,.light-panel,.contact{padding:28px 20px}
   .light-panel{border-radius:0}
   footer div{border-right:0;border-bottom:1px solid #3d506a;padding-bottom:18px}
