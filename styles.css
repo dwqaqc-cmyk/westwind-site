@@ -51,3 +51,64 @@ footer span:last-child{border-right:0}
   .services article{min-height:auto}
   .contact img{max-width:100%}
 }
+/* FINAL FIXES */
+
+/* Stop About/Core Services content being clipped */
+.services-section {
+  padding-top: 72px !important;
+  padding-bottom: 78px !important;
+  overflow: visible !important;
+}
+
+.services {
+  overflow: visible !important;
+  align-items: stretch !important;
+}
+
+.services article {
+  min-height: 210px !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 30px !important;
+}
+
+.services article p,
+.services article h3 {
+  overflow: visible !important;
+}
+
+/* Improve bottom logo display */
+.contact {
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+.contact img {
+  width: 100% !important;
+  max-width: 760px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* More room on mobile */
+@media (max-width: 1000px) {
+  .services-section {
+    padding: 56px 28px !important;
+  }
+
+  .services article {
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-section {
+    padding: 38px 20px !important;
+  }
+
+  .contact img {
+    max-width: 100% !important;
+  }
+}
